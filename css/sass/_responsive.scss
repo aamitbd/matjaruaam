@@ -1,0 +1,36 @@
+@media (max-width:759px) {    
+    @for $i from 1 through 12 {
+        .col-#{$i} {            
+                width: 100%;
+                padding: 7px 15px;
+        }
+    }
+
+  .top-menu-2 {
+    .search-cont { 
+        
+        .search-main {
+            display: none;
+            
+        }
+        button.search-micon {
+            display: block;
+        }
+    }
+    .cart-account {
+        .mobile-menu {      
+             display: block; 
+       }
+    }
+  }
+    .main-menu {
+        display: none;
+        ul {
+            flex-direction: column;
+        }        
+    }
+    
+
+
+}
+

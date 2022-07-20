@@ -1,0 +1,60 @@
+$font-os: 'Oswald', sans-serif;
+$font-pop: 'Poppins', sans-serif;
+$font-rob: 'Roboto', sans-serif;
+
+$first-color: rgb(0, 255, 0);
+$color1: #e6e6e6;
+$color2: #009933;
+$h_color: #90ee90;
+$color-lsb:#87cefa;
+$color5: #f08080;
+$color-hover: #87ceeb;
+$color-body: #E3F6F5;
+$color-wh: #fff;
+$color-icon: #66ffc2;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+p{
+    font-family: $font-os;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+.container-fluid {
+    max-width: 100%;
+}
+.container {
+    max-width: 90%;
+    margin: 0 auto;    
+}
+.row {
+    display: flex;
+    flex-flow: row wrap; 
+}
+@media (min-width:760px) {    
+    @for $i from 1 through 12 {
+        .col-#{$i} {
+            width: ($i/12*100%);
+            padding: 3px 10px;                        
+        }
+    }
+}
+@for $i from 1 through 12 {
+    .col-m-#{$i} {
+        width: ($i/12*100%);
+        padding: 3px 10px;                        
+    }
+}
+
+

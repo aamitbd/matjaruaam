@@ -1,0 +1,14 @@
+@mixin circle($wdth, $hght, $clr:#fff) {
+    width: $wdth;
+    height: $hght ;
+    border-radius: 50%;
+    background-color: $clr;
+}
+
+@mixin befter($width, $height, $color: #17b7f7) {
+    content: "";
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-color: $color;
+}
