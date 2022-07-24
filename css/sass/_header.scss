@@ -136,9 +136,12 @@
 .header-carousel {
     .carousel-container{               
         position: relative;
-        margin: auto;        
-        .carousel-slides {           
+        margin:1px auto;        
+        .carousel-slide {           
             display: none;
+           img {
+            width:100%;
+           }
             .carousel-text{
                 position: absolute;
                 bottom: 5em;

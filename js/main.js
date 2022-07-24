@@ -52,7 +52,7 @@ function showSlide(n) {
 }
 
 */
-
+//mobile-menu
  const mobileMenu = document.querySelector('.mobile-menu');
  const mainMenu = document.querySelector('.main-menu');
  
@@ -64,3 +64,22 @@ function showSlide(n) {
         mainMenu.style.display = "none";
     }
  }) 
+
+ //header-carousel
+
+ var slideIndex = 0;
+
+ function showSlide() {
+    let slides = document.querySelectorAll(".carousel-slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";        
+    }
+    slideIndex++; 
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex-1].style.display = "block";
+    console.log(slideIndex);
+
+ }
+ setInterval(showSlide, 3000);

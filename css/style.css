@@ -354,14 +354,18 @@ img {
 
 .header-carousel .carousel-container {
   position: relative;
-  margin: auto;
+  margin: 1px auto;
 }
 
-.header-carousel .carousel-container .carousel-slides {
+.header-carousel .carousel-container .carousel-slide {
   display: none;
 }
 
-.header-carousel .carousel-container .carousel-slides .carousel-text {
+.header-carousel .carousel-container .carousel-slide img {
+  width: 100%;
+}
+
+.header-carousel .carousel-container .carousel-slide .carousel-text {
   position: absolute;
   bottom: 5em;
   color: #fff;
